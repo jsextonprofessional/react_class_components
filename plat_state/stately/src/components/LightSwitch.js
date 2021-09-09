@@ -5,17 +5,15 @@ class LightSwitch extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            position: "On"
+            position: "YEET"
         };
-
-        
     }
     // this method goes inside of the LightSwitch Component
     flipSwitch = () => {
-        if (this.state.position === "On") {
-            this.setState({ position: "Off" });
+        if (this.state.position === "YOINK") {
+            this.setState({ position: "YEET" });
         } else {
-            this.setState({ position: "On" });
+            this.setState({ position: "YOINK" });
         }
     }
 
@@ -23,7 +21,7 @@ class LightSwitch extends Component {
         return (
             <fieldset>
                 <p>The light is currently {this.state.position}</p>
-                <button>Flip Switch</button>
+                <button onClick={ this.flipSwitch }>Have a Flip</button>
             </fieldset>
         );
     }
