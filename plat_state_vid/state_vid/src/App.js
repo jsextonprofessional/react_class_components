@@ -1,9 +1,11 @@
 import './App.css';
+import Message from './components/Message';
+
 
 function App() {
   return (
     <div className="App">
-      <button onClick={ ()=> alert("This button has been clicked!") }>Click Me</button>
+      <Message />
     </div>
   );
 }
