@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './styles.css';
 
 class PersonCard extends Component{
 
@@ -19,7 +20,7 @@ class PersonCard extends Component{
                 <h1>{this.props.lastName}, {this.props.firstName}</h1>
                 <h4>Age: {this.state.age}</h4>
                 <h4>Hair Color: {this.props.hairColor}</h4>
-                <button onClick={birthday}>Birthday Button 4 {this.props.firstName}</button>
+                <button onClick={birthday} className="btn">Birthday Button 4 {this.props.firstName}</button>
             </div>
         )
     }
